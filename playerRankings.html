@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+          <script type="text/javascript" src="playerScript.js"> </script>
+          <link rel="stylesheet" type="text/css" href="styling.css">
+    </head>
+
+	<body>
+		<h1> Welcome to Tennis World! </h1>
+
+		<p> This is the playing rankings page! Please select which category of players you would like to view. </p>
+
+		<form action="home.html">
+	    	<input type="submit" value="Home Page"/>
+		</form>
+
+		<form action="javascript:generateTable(document.getElementById('mensForm').value);">
+			<input id="mensForm" type="submit" value="Mens"/>
+		</form>
+
+		<form action="javascript:generateTable(document.getElementById('womensForm').value);">
+			<input id="womensForm" type="submit" value="Womens"/>
+		</form>
+
+		<div id="rank_table">
+
+		</div>
+
+	</body>
+</html>
